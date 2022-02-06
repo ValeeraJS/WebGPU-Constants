@@ -1,6 +1,6 @@
 {
 	"name": "@valeera/webgpu-constant",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "The dictionary of WebGPU constants.",
 	"main": "build/GPUConstant.js",
 	"repository": "ValeeraJS/GPUConstant",
@@ -56,21 +56,21 @@
 	"author": "hypnosnova",
 	"license": "MIT",
 	"devDependencies": {
-		"@types/dom-mediacapture-record": "^1.0.2",
-		"@typescript-eslint/eslint-plugin": "^2.6.1",
-		"@typescript-eslint/parser": "^2.6.1",
+		"@types/dom-mediacapture-record": "^1.0.11",
+		"@typescript-eslint/eslint-plugin": "^5.10.2",
+		"@typescript-eslint/parser": "^5.10.2",
 		"chai": "^4.2.0",
 		"concurrently": "^5.0.0",
 		"eslint": "^6.6.0",
 		"eslint-plugin-html": "^6.0.0",
 		"esm": "^3.2.25",
-		"google-closure-compiler": "^20191027.0.0",
+		"google-closure-compiler": "^20220104.0.0",
 		"http-server": "^0.11.1",
 		"qunit": "^2.9.3",
-		"rollup": "^1.26.3",
+		"rollup": "^2.67.3",
 		"rollup-plugin-json": "^4.0.0",
-		"rollup-plugin-typescript2": "^0.24.3",
-		"typescript": "^3.6.4"
+		"rollup-plugin-typescript2": "^0.31.2",
+		"typescript": "^4.5.5"
 	},
 	"jspm": {
 		"files": [

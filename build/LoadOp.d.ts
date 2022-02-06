@@ -1,4 +1,5 @@
 declare enum LoadOp {
-    LOAD = "load"
+    LOAD = "load",
+    CLEAR = "clear"
 }
 export default LoadOp;

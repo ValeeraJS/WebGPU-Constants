@@ -1,8 +1,8 @@
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
 	typeof define === 'function' && define.amd ? define(['exports'], factory) :
-	(global = global || self, factory(global.GPUConstant = {}));
-}(this, (function (exports) { 'use strict';
+	(global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.GPUConstant = {}));
+})(this, (function (exports) { 'use strict';
 
 	var AddressMode;
 	(function (AddressMode) {
@@ -12,7 +12,7 @@
 	})(AddressMode || (AddressMode = {}));
 	var AddressMode$1 = AddressMode;
 
-	var FilterMode;
+	var FilterMode$4;
 	(function (FilterMode) {
 	    FilterMode["UNIFORM_BUFFER"] = "uniform-buffer";
 	    FilterMode["STORAGE_BUFFER"] = "storage-buffer";
@@ -23,8 +23,8 @@
 	    FilterMode["MULTISAMPLED_TEXTURE"] = "multisampled-texture";
 	    FilterMode["READONLY_STORAGE_TEXTURE"] = "readonly-storage-texture";
 	    FilterMode["WRITEONLY_STORAGE_TEXTURE"] = "writeonly-storage-texture";
-	})(FilterMode || (FilterMode = {}));
-	var FilterMode$1 = FilterMode;
+	})(FilterMode$4 || (FilterMode$4 = {}));
+	var FilterMode$5 = FilterMode$4;
 
 	var BlendFactor;
 	(function (BlendFactor) {
@@ -101,12 +101,12 @@
 	})(FilterMode$2 || (FilterMode$2 = {}));
 	var FilterMode$3 = FilterMode$2;
 
-	var FilterMode$4;
+	var FilterMode;
 	(function (FilterMode) {
 	    FilterMode["NEAREST"] = "nearest";
 	    FilterMode["LINEAR"] = "linear";
-	})(FilterMode$4 || (FilterMode$4 = {}));
-	var FilterMode$5 = FilterMode$4;
+	})(FilterMode || (FilterMode = {}));
+	var FilterMode$1 = FilterMode;
 
 	var FrontFace;
 	(function (FrontFace) {
@@ -132,6 +132,7 @@
 	var LoadOp;
 	(function (LoadOp) {
 	    LoadOp["LOAD"] = "load";
+	    LoadOp["CLEAR"] = "clear";
 	})(LoadOp || (LoadOp = {}));
 	var LoadOp$1 = LoadOp;
 
@@ -282,7 +283,7 @@
 	})(TextureFormat || (TextureFormat = {}));
 	var TextureFormat$1 = TextureFormat;
 
-	var TextureViewDimension;
+	var TextureViewDimension$2;
 	(function (TextureViewDimension) {
 	    TextureViewDimension["ONE"] = "1d";
 	    TextureViewDimension["TWO"] = "2d";
@@ -290,10 +291,10 @@
 	    TextureViewDimension["CUBE"] = "cube";
 	    TextureViewDimension["CUBE_ARRAY"] = "cube-array";
 	    TextureViewDimension["THREE"] = "3d";
-	})(TextureViewDimension || (TextureViewDimension = {}));
-	var TextureViewDimension$1 = TextureViewDimension;
+	})(TextureViewDimension$2 || (TextureViewDimension$2 = {}));
+	var TextureViewDimension$3 = TextureViewDimension$2;
 
-	var TextureViewDimension$2;
+	var TextureViewDimension;
 	(function (TextureViewDimension) {
 	    TextureViewDimension["UCHAR_2"] = "uchar2";
 	    TextureViewDimension["UCHAR_4"] = "uchar4";
@@ -325,11 +326,11 @@
 	    TextureViewDimension["INT_2"] = "int2";
 	    TextureViewDimension["INT_3"] = "int3";
 	    TextureViewDimension["INT_4"] = "int4";
-	})(TextureViewDimension$2 || (TextureViewDimension$2 = {}));
-	var TextureViewDimension$3 = TextureViewDimension$2;
+	})(TextureViewDimension || (TextureViewDimension = {}));
+	var TextureViewDimension$1 = TextureViewDimension;
 
 	exports.AddressMode = AddressMode$1;
-	exports.BindingType = FilterMode$1;
+	exports.BindingType = FilterMode$5;
 	exports.BlendFactor = BlendFactor$1;
 	exports.BlendOperation = BlendOperation$1;
 	exports.CompareFunction = CompareFunction$1;
@@ -337,7 +338,7 @@
 	exports.CullMode = CullMode$1;
 	exports.ErrorFilter = ErrorFilter$1;
 	exports.FeatureName = FilterMode$3;
-	exports.FilterMode = FilterMode$5;
+	exports.FilterMode = FilterMode$1;
 	exports.FrontFace = FrontFace$1;
 	exports.IndexFormat = IndexFormat$1;
 	exports.InputStepMode = InputStepMode$1;
@@ -351,9 +352,9 @@
 	exports.TextureComponentType = TextureComponentType$1;
 	exports.TextureDimension = TextureDimension$1;
 	exports.TextureFormat = TextureFormat$1;
-	exports.TextureViewDimension = TextureViewDimension$1;
-	exports.VertexFormat = TextureViewDimension$3;
+	exports.TextureViewDimension = TextureViewDimension$3;
+	exports.VertexFormat = TextureViewDimension$1;
 
 	Object.defineProperty(exports, '__esModule', { value: true });
 
-})));
+}));

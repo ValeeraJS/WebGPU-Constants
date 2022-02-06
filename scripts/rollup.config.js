@@ -14,13 +14,13 @@ export default {
 			format: 'umd',
 			name: 'GPUConstant',
 			file: 'build/GPUConstant.js',
-			sourceMap: true,
+			sourcemap: false,
 			indent: '\t'
 		},
 		{
 			format: 'es',
 			file: 'build/GPUConstant.module.js',
-			sourceMap: true,
+			sourcemap: false,
 			indent: '\t'
 		}
 	]

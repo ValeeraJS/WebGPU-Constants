@@ -6,7 +6,7 @@ var AddressMode;
 })(AddressMode || (AddressMode = {}));
 var AddressMode$1 = AddressMode;
 
-var FilterMode;
+var FilterMode$4;
 (function (FilterMode) {
     FilterMode["UNIFORM_BUFFER"] = "uniform-buffer";
     FilterMode["STORAGE_BUFFER"] = "storage-buffer";
@@ -17,8 +17,8 @@ var FilterMode;
     FilterMode["MULTISAMPLED_TEXTURE"] = "multisampled-texture";
     FilterMode["READONLY_STORAGE_TEXTURE"] = "readonly-storage-texture";
     FilterMode["WRITEONLY_STORAGE_TEXTURE"] = "writeonly-storage-texture";
-})(FilterMode || (FilterMode = {}));
-var FilterMode$1 = FilterMode;
+})(FilterMode$4 || (FilterMode$4 = {}));
+var FilterMode$5 = FilterMode$4;
 
 var BlendFactor;
 (function (BlendFactor) {
@@ -95,12 +95,12 @@ var FilterMode$2;
 })(FilterMode$2 || (FilterMode$2 = {}));
 var FilterMode$3 = FilterMode$2;
 
-var FilterMode$4;
+var FilterMode;
 (function (FilterMode) {
     FilterMode["NEAREST"] = "nearest";
     FilterMode["LINEAR"] = "linear";
-})(FilterMode$4 || (FilterMode$4 = {}));
-var FilterMode$5 = FilterMode$4;
+})(FilterMode || (FilterMode = {}));
+var FilterMode$1 = FilterMode;
 
 var FrontFace;
 (function (FrontFace) {
@@ -126,6 +126,7 @@ var InputStepMode$1 = InputStepMode;
 var LoadOp;
 (function (LoadOp) {
     LoadOp["LOAD"] = "load";
+    LoadOp["CLEAR"] = "clear";
 })(LoadOp || (LoadOp = {}));
 var LoadOp$1 = LoadOp;
 
@@ -276,7 +277,7 @@ var TextureFormat;
 })(TextureFormat || (TextureFormat = {}));
 var TextureFormat$1 = TextureFormat;
 
-var TextureViewDimension;
+var TextureViewDimension$2;
 (function (TextureViewDimension) {
     TextureViewDimension["ONE"] = "1d";
     TextureViewDimension["TWO"] = "2d";
@@ -284,10 +285,10 @@ var TextureViewDimension;
     TextureViewDimension["CUBE"] = "cube";
     TextureViewDimension["CUBE_ARRAY"] = "cube-array";
     TextureViewDimension["THREE"] = "3d";
-})(TextureViewDimension || (TextureViewDimension = {}));
-var TextureViewDimension$1 = TextureViewDimension;
+})(TextureViewDimension$2 || (TextureViewDimension$2 = {}));
+var TextureViewDimension$3 = TextureViewDimension$2;
 
-var TextureViewDimension$2;
+var TextureViewDimension;
 (function (TextureViewDimension) {
     TextureViewDimension["UCHAR_2"] = "uchar2";
     TextureViewDimension["UCHAR_4"] = "uchar4";
@@ -319,7 +320,7 @@ var TextureViewDimension$2;
     TextureViewDimension["INT_2"] = "int2";
     TextureViewDimension["INT_3"] = "int3";
     TextureViewDimension["INT_4"] = "int4";
-})(TextureViewDimension$2 || (TextureViewDimension$2 = {}));
-var TextureViewDimension$3 = TextureViewDimension$2;
+})(TextureViewDimension || (TextureViewDimension = {}));
+var TextureViewDimension$1 = TextureViewDimension;
 
-export { AddressMode$1 as AddressMode, FilterMode$1 as BindingType, BlendFactor$1 as BlendFactor, BlendOperation$1 as BlendOperation, CompareFunction$1 as CompareFunction, CompilationMessageType$1 as CompilationMessageType, CullMode$1 as CullMode, ErrorFilter$1 as ErrorFilter, FilterMode$3 as FeatureName, FilterMode$5 as FilterMode, FrontFace$1 as FrontFace, IndexFormat$1 as IndexFormat, InputStepMode$1 as InputStepMode, LoadOp$1 as LoadOp, PipelineStatisticName$1 as PipelineStatisticName, PowerPreference$1 as PowerPreference, PrimitiveTopology$1 as PrimitiveTopology, QueryType$1 as QueryType, StencilOperation$1 as StencilOperation, StoreOp$1 as StoreOp, TextureComponentType$1 as TextureComponentType, TextureDimension$1 as TextureDimension, TextureFormat$1 as TextureFormat, TextureViewDimension$1 as TextureViewDimension, TextureViewDimension$3 as VertexFormat };
+export { AddressMode$1 as AddressMode, FilterMode$5 as BindingType, BlendFactor$1 as BlendFactor, BlendOperation$1 as BlendOperation, CompareFunction$1 as CompareFunction, CompilationMessageType$1 as CompilationMessageType, CullMode$1 as CullMode, ErrorFilter$1 as ErrorFilter, FilterMode$3 as FeatureName, FilterMode$1 as FilterMode, FrontFace$1 as FrontFace, IndexFormat$1 as IndexFormat, InputStepMode$1 as InputStepMode, LoadOp$1 as LoadOp, PipelineStatisticName$1 as PipelineStatisticName, PowerPreference$1 as PowerPreference, PrimitiveTopology$1 as PrimitiveTopology, QueryType$1 as QueryType, StencilOperation$1 as StencilOperation, StoreOp$1 as StoreOp, TextureComponentType$1 as TextureComponentType, TextureDimension$1 as TextureDimension, TextureFormat$1 as TextureFormat, TextureViewDimension$3 as TextureViewDimension, TextureViewDimension$1 as VertexFormat };
